@@ -265,7 +265,7 @@ venue_counts[venue_counts==max_spot].index.tolist()
 
 
 ```python
-#__SOlUTION__
+#__SOLUTION__
 movies['area_code'] = [num[1:4] for num in movies['Park Phone']]
 
 movies.area_code.value_counts()
