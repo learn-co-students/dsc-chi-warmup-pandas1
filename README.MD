@@ -228,6 +228,23 @@ venue_counts[venue_counts==max_spot].index.tolist()
 
 #### Are there more 773 or 312 area codes for places where movies are shown?  
 
+
+```python
+movies['area_code'] = [num[1:4] for num in movies['Park Phone']]
+
+movies.area_code.value_counts()
+```
+
+
+
+
+    312    151
+    773     58
+    317      1
+    Name: area_code, dtype: int64
+
+
+
 #### Group the data by what day of the week the movies are shown using `.groupby()`
 
 #### Assign to the variable "movies_grp_day" (what type of object is this?)
@@ -378,7 +395,7 @@ def bar_chart(x, y, leg):
 ```
 
 
-![png](index_files/index_20_0.png)
+![png](index_files/index_21_0.png)
 
 
 
@@ -451,5 +468,5 @@ plt.show()
 ```
 
 
-![png](index_files/index_21_0.png)
+![png](index_files/index_22_0.png)
 
