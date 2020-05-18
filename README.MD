@@ -453,7 +453,7 @@ venue_max
 
 #### What's the area code in which movies are shown most frequently?
 
-#### Assign your answer to the variable area_code as an integer
+#### Assign your answer to the variable `area_code` as an integer
 
 
 ```python
