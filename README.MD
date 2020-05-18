@@ -172,6 +172,10 @@ When you're done it should look like this (w/ figsize 8,5):
 
 ![](viz/final_chart.png)
 
+#__SOLUTION__
+
+![](viz/final_chart.png)
+
 
 ```python
 #Your code here
