@@ -539,7 +539,7 @@ area_code
 
 
 ```python
-#run this cell to this your answer
+#run this cell to test your answer
 
 run_test(area_code, 'area_code')
 ```
