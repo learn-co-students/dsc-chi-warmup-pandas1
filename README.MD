@@ -16,12 +16,6 @@ Run:
 
 ```python
 
-```
-
-
-```python
-#__SOLUTION__
-
 #data manip
 import pandas as pd
 
@@ -41,12 +35,6 @@ import matplotlib.pyplot as plt
 
 
 ```python
-
-```
-
-
-```python
-#__SOLUTION__
 
 movies = pd.read_csv('data/Chicago_Park_District__Movies_in_the_Parks_2019.csv')
 
@@ -163,12 +151,6 @@ movies.head()
 
 ```python
 
-```
-
-
-```python
-#__SOLUTION__
-
 print(movies.dtypes)
 
 movies.Date = pd.to_datetime(movies.Date)
@@ -194,12 +176,6 @@ movies.Date = pd.to_datetime(movies.Date)
 
 
 ```python
-
-```
-
-
-```python
-#__SOLUTION__
 movies.Day = pd.Categorical(
     movies.Day, 
     categories = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
@@ -232,12 +208,6 @@ movies.Day = pd.Categorical(
 
 
 ```python
-
-```
-
-
-```python
-#__SOLUTION__
 venue_counts = (
     movies
     .Park
@@ -260,12 +230,6 @@ venue_counts[venue_counts==max_spot].index.tolist()
 
 
 ```python
-
-```
-
-
-```python
-#__SOLUTION__
 movies['area_code'] = [num[1:4] for num in movies['Park Phone']]
 
 movies.area_code.value_counts()
@@ -288,12 +252,6 @@ movies.area_code.value_counts()
 
 ```python
 
-```
-
-
-```python
-#__SOLUTION__
-
 movies_grp_day = movies.groupby('Day')
 
 type(movies_grp_day)
@@ -311,12 +269,6 @@ type(movies_grp_day)
 
 ```python
 
-```
-
-
-```python
-#__SOLUTION__
-
 movies_mon = movies_grp_day.get_group('Mon')
 
 type(movies_mon)
@@ -328,12 +280,6 @@ type(movies_mon)
 
 
 ```python
-
-```
-
-
-```python
-#__SOLUTION__
 
 def groupby_mode(gm_group):
     '''
@@ -396,12 +342,6 @@ movies_grp_day['Rating'].agg(
 
 ```python
 
-```
-
-
-```python
-#__SOLUTION__
-
 
 movie_day_ratings = (
 movies
@@ -455,12 +395,11 @@ def bar_chart(x, y, leg):
 ```
 
 
-![png](index_files/index_31_0.png)
+![png](index_files/index_21_0.png)
 
 
 
 ```python
-#__SOLUTION__
 
 #Turn Day column into an ordered categorical and sort
 movies.Day = pd.Categorical(
@@ -529,20 +468,5 @@ plt.show()
 ```
 
 
-![png](index_files/index_32_0.png)
+![png](index_files/index_22_0.png)
 
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
