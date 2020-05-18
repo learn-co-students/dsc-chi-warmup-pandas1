@@ -20,38 +20,6 @@ from test_background import pkl_dump, test_obj_dict, run_test_dict, run_test
 from test_background import pkl_dump, test_obj_dict, run_test_dict, run_test
 ```
 
-
-```python
-test_obj_dict
-```
-
-
-
-
-    {'day_underwriter_min': 'Friday',
-     'area_code': 312,
-     'venue_max': ['Ward (A. Montgomery) Park'],
-     'repeats': Day
-     Monday        3
-     Tuesday       9
-     Wednesday     6
-     Thursday     10
-     Friday       18
-     Saturday      9
-     Sunday        1
-     Name: Title, dtype: int64,
-     'modal_ratings_day': Day
-     Monday          PG
-     Tuesday         PG
-     Wednesday       PG
-     Thursday     PG-13
-     Friday          PG
-     Saturday        PG
-     Sunday          PG
-     Name: Rating, dtype: object}
-
-
-
 ## Data setup
 
 Import: 
@@ -684,7 +652,7 @@ run_test(day_underwriter_min, 'day_underwriter_min')
 
 
 ```python
-
+#Your code here
 ```
 
 
@@ -823,7 +791,7 @@ plt.show()
 ```
 
 
-![png](index_files/index_45_0.png)
+![png](index_files/index_44_0.png)
 
 
 
