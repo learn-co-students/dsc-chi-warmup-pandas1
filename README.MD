@@ -735,6 +735,10 @@ When you're done it should look like this (w/ figsize 8,5):
 
 ![](viz/final_chart.png)
 
+#__SOLUTION__
+
+![](viz/final_chart.png)
+
 
 ```python
 #Your code here
@@ -791,7 +795,7 @@ plt.show()
 ```
 
 
-![png](index_files/index_44_0.png)
+![png](index_files/index_45_0.png)
 
 
 
